@@ -36,7 +36,7 @@ export default function PostFormCard() {
                     </button>
                 </div>
                 <div className='grow text-right'>
-                    <button className='bg-socialBlue text-white px-5 py-1 rounded-md'>
+                    <button className='bg-red-600 text-white px-5 py-1 rounded-md'>
                         Share
                     </button>
                 </div>

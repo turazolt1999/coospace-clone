@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function PostCard() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    const dropDownStyles = 'flex py-2 px-2 gap-2 hover:bg-socialBlue hover:text-white -mx-6 px-6 rounded-md transition-all hover:scale-105 hover:shadow-md shadow-gray-300 ';
+    const dropDownStyles = 'flex py-2 px-2 gap-2 hover:bg-red-600 hover:text-white -mx-6 px-6 rounded-md transition-all hover:scale-105 hover:shadow-md shadow-gray-300 ';
 
     return (
         <Card>
@@ -16,7 +16,7 @@ export default function PostCard() {
                 </div>
                 <div className='grow'>
                     <p>
-                        <a className="font-semibold">Turánszki Zoltán</a> shared a <a className="text-socialBlue">album</a>
+                        <a className="font-semibold">Turánszki Zoltán</a> shared a <a className="text-red-700">album</a>
                     </p>
                     <p className="text-gray-500 text-sm">2 hours ago</p>
                 </div>

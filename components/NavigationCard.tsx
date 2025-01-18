@@ -1,8 +1,8 @@
 import Card from './Card';
 
 export default function NavigationCard() {
-    const activeElement = 'flex gap-3 py-3 bg-socialBlue text-white -mx-10 px-10 rounded-md shadow-md shadow-gray-400';
-    const nonActiveElement = 'flex gap-3 py-2 my-2 hover:bg-socialBlue hover:bg-opacity-20 -mx-6 px-6 rounded-md transition-all hover:scale-105 hover:shadow-md shadow-gray-300 ';
+    const activeElement = 'flex gap-3 py-3 bg-red-600 text-white -mx-10 px-10 rounded-md shadow-md shadow-gray-400';
+    const nonActiveElement = 'flex gap-3 py-2 my-2 hover:bg-red-500 hover:bg-opacity-20 -mx-6 px-6 rounded-md transition-all hover:scale-105 hover:shadow-md shadow-gray-300 ';
     return (
         <Card>
             <div className="px-4 py-2">
