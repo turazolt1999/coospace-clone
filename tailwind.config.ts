@@ -12,8 +12,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        socialBg: '#F5F7BG',
+        socialBlue: '#218DFA'
       },
     },
   },
