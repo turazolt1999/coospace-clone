@@ -2,6 +2,7 @@
 import Card from './Card';
 import Avatar from './Avatar';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function PostCard() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -16,7 +17,10 @@ export default function PostCard() {
                 </div>
                 <div className='grow'>
                     <p>
-                        <a className="font-semibold">Turánszki Zoltán</a> shared a <a className="text-red-700">album</a>
+                        <Link href={'/profile'}>
+                            <span className="mr-1 font-semibold cursor-pointer hover:underline hover:text-700">Turánszki Zoltán</span>
+                        </Link>
+                        shared a <a className="text-red-700">album</a>
                     </p>
                     <p className="text-gray-500 text-sm">2 hours ago</p>
                 </div>
