@@ -3,8 +3,6 @@ export default function Card({ children, noPadding }: any) {
 
     if (!noPadding) {
         classes += ' p-4';
-    } else {
-        classes += ' overflow-hidden';
     }
 
     return (
