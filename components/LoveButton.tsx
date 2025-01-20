@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export default function LoveButton({ children }: any) {
+interface LoveButtonProps {
+    lenght?: number;
+}
+
+export default function LoveButton({ lenght }: LoveButtonProps) {
     const [isFilled, setIsFilled] = useState(false);
 
     return (
@@ -23,7 +27,7 @@ export default function LoveButton({ children }: any) {
                     className="heart-path"
                 />
             </svg>
-            {children}
+            {lenght}
             <style jsx>
                 {`
                     .heart-path {

@@ -1,4 +1,9 @@
-export default function Card({ children, noPadding }: any) {
+interface CardProps {
+    children?: React.ReactNode;
+    noPadding?: boolean;
+}
+
+export default function Card({ children, noPadding }: CardProps) {
     let classes = "bg-white shadow-md shadow-gray-300 rounded-md mb-5";
 
     if (!noPadding) {

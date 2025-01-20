@@ -1,6 +1,12 @@
 import NavigationCard from "./NavigationCard";
 
-export default function Layout({ children, hideNavigation }: any) {
+interface LayoutProps {
+    children?: React.ReactNode;
+    hideNavigation?: boolean;
+}
+
+
+export default function Layout({ children, hideNavigation }: LayoutProps) {
     let rightColumnClasses = '';
     if (hideNavigation) {
         rightColumnClasses += 'w-full';

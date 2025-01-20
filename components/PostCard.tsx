@@ -4,6 +4,7 @@ import Avatar from './Avatar';
 import { useState } from 'react';
 import Link from 'next/link';
 import LoveButton from './LoveButton';
+import Image from 'next/image';
 
 export default function PostCard() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -77,11 +78,15 @@ export default function PostCard() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div className='rounded-md overflow-hidden'>
-                    <img src='https://plus.unsplash.com/premium_photo-1697729549014-2faefb25efba?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''></img>
+                    <Image
+                        src='https://plus.unsplash.com/premium_photo-1697729549014-2faefb25efba?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                        width={1075}
+                        height={300}
+                        alt='' />
                 </div>
             </div>
             <div className='mt-5 flex gap-8'>
-                <LoveButton>99</LoveButton>
+                <LoveButton lenght={10}></LoveButton>
                 <button className='flex gap-2 items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
