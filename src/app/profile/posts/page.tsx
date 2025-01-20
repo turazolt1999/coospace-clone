@@ -1,4 +1,3 @@
-import Card from "../../../../components/Card";
 import PostCard from "../../../../components/PostCard";
 import ProfilePage from "../page";
 
