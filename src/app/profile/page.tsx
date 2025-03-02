@@ -26,12 +26,11 @@ export default function ProfilePage({ children }: any) {
         <Layout>
             <Card noPadding={true}>
                 <div className="relative overflow-hidden rounded-md">
-                    <div className="h-40 overflow-hidden flex justify-center items-center">
+                    <div className="h-40 overflow-hidden  flex justify-center items-center relative">
                         <Image
-                            src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.6435-9/77097801_2877734148944309_5819847700178272256_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=G9EfEGflZNUQ7kNvgHIEKrD&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=A1yNe4sZGsAP0kfh1UtgFVM&oh=00_AYALesPscJ23YPYhE9sLyt4UkXRCWJJ4d899NSyYqtu7Sw&oe=67B4A40A"
-                            layout="intrinsic"
-                            width={500}
-                            height={300}
+                            src="https://szegedtourism.hu/wp-content/themes/szegedtourism/images/og-image.png"
+                            layout="fill"
+                            objectFit="cover"
                             alt="" />
                     </div>
                     <div className="absolute top-24 left-5">
